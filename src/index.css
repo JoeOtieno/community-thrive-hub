@@ -6,42 +6,40 @@
 
 @layer base {
   :root {
-    --background: 40 33% 98%;
-    --foreground: 210 29% 15%;
+    --background: 39 32% 95%;
+    --foreground: 220 20% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 29% 15%;
+    --card-foreground: 220 20% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 29% 15%;
+    --popover-foreground: 220 20% 14%;
 
-    --primary: 32 83% 51%;
+    --primary: 27 89% 49%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 209 52% 23%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 39 32% 95%;
 
-    --muted: 40 20% 94%;
-    --muted-foreground: 210 10% 45%;
+    --muted: 37 25% 91%;
+    --muted-foreground: 220 10% 42%;
 
-    --accent: 32 83% 95%;
-    --accent-foreground: 32 83% 35%;
+    --accent: 27 89% 95%;
+    --accent-foreground: 27 89% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 32 83% 51%;
+    --border: 37 18% 88%;
+    --input: 37 18% 88%;
+    --ring: 27 89% 49%;
 
     --radius: 0.5rem;
 
-    --warm: 35 90% 55%;
-    --warm-foreground: 0 0% 100%;
-    --navy: 209 52% 23%;
-    --navy-foreground: 0 0% 100%;
+    --cream: 39 32% 95%;
+    --cream-dark: 37 25% 91%;
+    --navy: 220 20% 14%;
     --olive: 85 25% 40%;
-    --olive-foreground: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -69,15 +67,7 @@
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-warm;
-  }
-
   .section-padding {
     @apply py-16 md:py-24 px-4 md:px-8;
-  }
-
-  .hero-overlay {
-    background: linear-gradient(135deg, hsl(209 52% 23% / 0.85) 0%, hsl(32 83% 51% / 0.4) 100%);
   }
 }

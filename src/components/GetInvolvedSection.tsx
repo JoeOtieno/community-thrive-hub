@@ -51,7 +51,7 @@ const GetInvolvedSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="bg-muted rounded-xl p-8 text-center hover:shadow-lg transition-shadow"
+              className="bg-background rounded-xl p-8 text-center hover:shadow-lg transition-shadow border border-border"
             >
               <div className="w-14 h-14 bg-accent rounded-full flex items-center justify-center mx-auto mb-5">
                 <way.icon size={24} className="text-primary" />
@@ -59,7 +59,7 @@ const GetInvolvedSection = () => {
               <h3 className="text-xl font-bold mb-3">{way.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-5">{way.description}</p>
               <Link to={way.link}>
-                <Button variant="outline" size="sm" className="gap-1">
+                <Button variant="outline" size="sm" className="gap-1 rounded-full">
                   {way.cta} <ArrowRight size={14} />
                 </Button>
               </Link>
